@@ -34,12 +34,12 @@ router.get("/", async function (req, res, next) {
       //   insertSqls.push(insertSql);
    }
 
-   // await write.sync("pictures500.sql", insertSqls, { newline: true });
+   await write.sync("pictures500.sql", insertSqls, { newline: true });
    // await write.sync("pictures1000.sql", insertSqls, { newline: true });
    // await write.sync("pictures1500.sql", insertSqls, { newline: true });
    // await write.sync("pictures2000.sql", insertSqls, { newline: true });
 
-   res.render("pictures", { title: "Express" });
+   res.render("pictures",  { title: "Express" });
 });
 
 module.exports = router;
